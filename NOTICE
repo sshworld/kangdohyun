@@ -1,0 +1,64 @@
+강도현 글쓰기 환경 (kangdohyun)
+Copyright © 2026 sshworld <ssh97540@gmail.com>
+
+This repository is dual-licensed:
+
+================================================================================
+CODE — Apache License 2.0
+================================================================================
+
+The following directories and files are licensed under the Apache License,
+Version 2.0 (see LICENSE-CODE):
+
+  .claude/          — agents, commands, skills, settings.json
+  .claude-hooks/    — session-inject.sh, voice-lint.sh
+  .gitignore
+  AGENTS.md
+  CLAUDE.md
+  NOTICE
+  README.md (technical sections only — directory structure, commands, hooks)
+
+You may use, modify, and redistribute these under the terms of Apache 2.0.
+Attribution is required. No warranty.
+
+================================================================================
+CONTENT — Creative Commons BY-NC-ND 4.0
+================================================================================
+
+The following directories are licensed under
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+(see LICENSE-CONTENT):
+
+  reference/        — biography.md (강도현 일대기)
+  world/            — characters, relations, setting, lexicon
+  content/          — diary, essay, novel, lyric (도현의 모든 글)
+  reviews/          — 합평 리포트
+  docs/             — 세션 추적·메타 문서
+  README.md (도현 서사 부분 — "도현은 누구인가" 등)
+
+You may share these under the following conditions:
+
+  - Attribution     : credit "© 2026 sshworld" and link this repository
+  - NonCommercial   : no commercial use whatsoever
+  - NoDerivatives   : no remix, transform, or build upon — including but not
+                      limited to character forks, alternate timelines, or
+                      derivative works featuring 강도현 or any registered
+                      character in world/characters.md
+
+For permissions beyond this license, contact ssh97540@gmail.com .
+
+================================================================================
+FICTION DISCLAIMER
+================================================================================
+
+강도현 is a fictional character. All diaries, essays, fiction pieces, and
+biographical material in this repository are creative works. References to
+drugs, dosages, acquisition routes, and street slang are verified for character
+authenticity but DO NOT constitute instructions, endorsement, or encouragement
+of real-world use, replication, or imitation.
+
+If you or someone you know needs help:
+  - 자살 위기상담     : 1588-9191 (한국생명의전화)
+  - 보건복지상담     : 129
+  - 청소년상담       : 1388
+  - 마약류 중독상담  : 1342

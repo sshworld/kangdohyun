@@ -101,3 +101,18 @@ novel/
 **일기 저장**: `content/diary/YYYY-MM-DD-간단한제목.md`
 
 **산출물은 '완성'이 아니다**. 도현의 글은 찢기거나 흐려지는 것이 자연스러운 상태다.
+
+---
+
+## 라이센스
+
+이 저장소는 **dual-licensed** 입니다 — 자세한 디렉토리 매핑은 [`NOTICE`](./NOTICE) 참조.
+
+| 영역 | 라이센스 | 파일 |
+|---|---|---|
+| 코드·설정·툴체인 (`.claude/`, `.claude-hooks/`, settings, hooks, `AGENTS.md`, `CLAUDE.md`) | Apache License 2.0 | [`LICENSE-CODE`](./LICENSE-CODE) |
+| 창작 콘텐츠 (`content/`, `reviews/`, `reference/`, `world/`, `docs/`) | CC BY-NC-ND 4.0 | [`LICENSE-CONTENT`](./LICENSE-CONTENT) |
+
+CC BY-NC-ND 4.0은 **비영리 + 변경 금지** — 강도현 캐릭터·일기·서사를 fork·remix·다른 결말로 변형하는 행위는 허용되지 않습니다. 인용·연구·교육 목적의 부분 인용은 출처 명기 시 가능합니다.
+
+저작권 © 2026 sshworld &lt;ssh97540@gmail.com&gt;.
