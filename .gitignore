@@ -1,0 +1,53 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+
+# Claude Code (machine-local)
+.claude/settings.local.json
+.claude/cache/
+.claude/debug/
+.claude/file-history/
+.claude/history.jsonl
+.claude/paste-cache/
+.claude/plans/
+.claude/projects/
+.claude/backups/
+
+# Memory & local conversation state
+memory/
+*.jsonl
+
+# Secrets / credentials
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*
+secrets*
+*token*
+*.secret
+.npmrc
+.netrc
+
+# Logs
+*.log
+logs/
+
+# OS / temp
+Thumbs.db
+*.tmp
+*.temp
