@@ -24,6 +24,7 @@
 .claude/plans/
 .claude/projects/
 .claude/backups/
+.claude/scheduled_tasks.lock
 
 # Memory & local conversation state
 memory/
