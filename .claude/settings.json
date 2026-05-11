@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Write",
-      "Edit"
+      "Edit",
+      "Bash(git push*)"
     ]
   },
   "hooks": {
