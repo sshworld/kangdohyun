@@ -28,8 +28,23 @@ description: 합평 패널 워크플로. 도현의 글 작성 후 5명 검사관
 | reality-checker | `.claude/agents/reality-checker.md` | 약물·장소·시세·법 사실성 |
 | character-keeper | `.claude/agents/character-keeper.md` | 인물 감지·호칭 규칙·world/ 갱신 |
 
+**장편 모드 추가 (10인 + 옵션 패널):**
+
+`content/novel/<slug>/_index.md`가 존재하는 장편 시리즈 합평 시, 위 5인에 더해 다음을 단일 메시지에서 동시 호출:
+
+| 검사관 | 에이전트 | 역할 |
+|---|---|---|
+| continuity-checker | `.claude/agents/continuity-checker.md` | 시리즈 연속성 (시스템) |
+| korean-grammar | `.claude/agents/korean-grammar.md` | 한국어 맞춤법·띄어쓰기·문장부호 |
+| erotic-detail-fanatic | `.claude/agents/erotic-detail-fanatic.md` | 19금 묘사 디테일 광 (페르소나) |
+| novel-craft-fanatic | `.claude/agents/novel-craft-fanatic.md` | 본격 소설 호흡·인물 입체감 광 (페르소나) |
+| continuity-foreshadow-fanatic | `.claude/agents/continuity-foreshadow-fanatic.md` | 떡밥·정합성·캐논 광 (페르소나) |
+
+- character-keeper 호출 시 `_canon.md`도 함께 읽도록 명시.
+- 페르소나 3명(erotic-detail / novel-craft / continuity-foreshadow)은 **그들이 만족할 때까지 반복 수정**이 원칙. 한 번 합평으로 끝내지 않음.
+
 옵션 (명시적 요청 시만):
-- marketer-eye (독자 시선): `/critique --marketer` 또는 사용자 명시 요청
+- marketer-eye (독자 시선): `/critique --marketer` 또는 1화 같은 흡인력 점검 필요 화
 
 ## 단계 3: 리포트 저장
 

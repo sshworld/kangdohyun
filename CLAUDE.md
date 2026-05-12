@@ -68,7 +68,45 @@
 | psyche-checker | 섹션5 심리회로 일치 | 상시 |
 | reality-checker | 약물·장소·시세·법 사실성 | 상시 |
 | character-keeper | 인물 감지·호칭 규칙·world/ 갱신 | 상시 |
+| continuity-checker | 장편 시리즈 단서·시간선·아크 연속성 | 장편 모드 상시 |
 | marketer-eye | 독자 시선 | 옵션 (`/critique --marketer`) |
+
+---
+
+## 장편 소설 모드
+
+`content/novel/<slug>/`에 `_index.md`가 있으면 그 슬러그가 진행 중인 장편 시리즈다.
+`/novel` 커맨드는 자동으로 다음 화를 잇는다. 새 세션·`/clear` 후에도 `/novel`만 치면 된다.
+
+### 디렉토리 규약
+
+| 파일 | 역할 |
+|---|---|
+| `content/novel/<slug>/_index.md` | 진행 포인터. 다음 화 번호·진입점 단서·아크 위치. **새 세션이 가장 먼저 읽는다.** |
+| `content/novel/<slug>/_outline.md` | 5부 구조 + 편당 외곽 1줄 |
+| `content/novel/<slug>/_canon.md` | 미해결 단서·인물 좌표·시간선 충돌 감시 |
+| `content/novel/<slug>/NNN-*.md` | 본문 (frontmatter 메타 포함) |
+| `reviews/novel/<slug>/NNN-*.review.md` | 합평 리포트 |
+
+### `/novel`이 자동으로 읽는 파일 (순서 엄수)
+
+1. `CLAUDE.md` + `reference/biography.md`
+2. `content/novel/<slug>/_index.md` → 다음 화 번호·진입점 단서
+3. `content/novel/<slug>/_outline.md`
+4. `content/novel/<slug>/_canon.md`
+5. 직전 2~3화 본문
+6. `world/characters.md`, `world/relations.md`, `world/lexicon.md`
+7. (선택) 동시기 일기 1~2편 — 톤 참조용
+
+### 저장 후 자동 갱신 (반드시)
+
+본문 저장 직후:
+1. `_canon.md` 갱신 — 새 단서·인물 좌표·시간선 충돌
+2. `_index.md` 갱신 — 마지막 완성 +1, 다음 진입점 단서, 색인 표 한 줄, 아크 위치 +1
+
+### 일기 활용
+
+`content/diary/`의 일기는 톤 참조용 raw material. 동시기 일기 1~2편 톤만 빌림. 본문 복사 금지.
 
 ---
 
